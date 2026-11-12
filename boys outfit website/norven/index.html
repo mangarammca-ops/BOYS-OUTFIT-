@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NORVEN — Modern Menswear</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Playfair+Display:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="topline">COMPLIMENTARY SHIPPING ON ORDERS OVER ₹5,000 <span>•</span> MADE FOR THE MODERN GENTLEMAN</div>
+<header class="nav">
+<a class="logo" href="#">NORVEN<span>.</span></a>
+<nav id="navLinks"><a href="#story">About Us</a><a href="#collection">Collection 2026</a><a href="#showroom">Showrooms</a><a href="#contact">Contact</a></nav>
+<div class="nav-icons"><button id="searchBtn" aria-label="Search">⌕</button><button id="bagBtn" aria-label="Shopping bag">♧ <i id="cartCount">0</i></button><button class="mobile-menu" id="mobileMenu">☰</button></div>
+</header>
+<section class="hero">
+<div class="hero-bg"><div class="hero-slide"></div><div class="hero-slide"></div><div class="hero-slide"></div><div class="hero-slide"></div></div>
+<div class="hero-overlay"></div>
+<div class="hero-top"><span>AUTUMN / WINTER</span><span>2026</span></div>
+<div class="hero-title">NORVEN</div>
+<div class="hero-bottom"><div><small>THE NEW COLLECTION</small><h1>Quiet confidence.<br><em>Unmistakable style.</em></h1><a class="cta" href="#collection">DISCOVER THE COLLECTION <span>↗</span></a></div><div class="hero-caption">CRAFTED FOR THE<br>MODERN GENTLEMAN</div></div>
+<div class="slider-indicator"><span class="active"></span><span></span><span></span><span></span></div>
+</section>
+<section class="intro" id="story"><div class="intro-head"><p class="kicker">A NEW STANDARD OF MENSWEAR</p><h2>Refined essentials.<br><em>Timeless presence.</em></h2></div><p class="intro-copy">NORVEN brings together modern tailoring, considered details and exceptional fabrics. A wardrobe designed to move effortlessly from everyday moments to occasions worth remembering.</p></section>
+<section class="collection" id="collection">
+<div class="section-head"><div><p class="kicker">EXPLORE NORVEN</p><h2>Designed around <em>you.</em></h2></div><a href="#products" class="underlink">VIEW ALL PIECES ↗</a></div>
+<div class="category-grid">
+<a class="category cat-main" href="#products" data-cat="Outerwear"><img src="images/look-15.jpg" alt="Outerwear"><div class="cat-caption"><small>01 / THE OUTER LAYER</small><h3>Outerwear<br>& tailoring</h3><span>EXPLORE ↗</span></div></a>
+<a class="category" href="#products" data-cat="Tops"><img src="images/look-06.jpg"><div class="cat-caption"><small>02 / EVERYDAY REFINED</small><h3>Tops</h3><span>EXPLORE ↗</span></div></a>
+<a class="category" href="#products" data-cat="Bottoms"><img src="images/look-17.jpg"><div class="cat-caption"><small>03 / THE PERFECT FIT</small><h3>Bottoms</h3><span>EXPLORE ↗</span></div></a>
+</div>
+</section>
+<section class="products-section" id="products"><div class="section-head"><div><p class="kicker">THE NORVEN EDIT</p><h2>Pieces to <em>keep.</em></h2></div><div class="filters"><button class="active" data-filter="All">All</button><button data-filter="Tops">Tops</button><button data-filter="Bottoms">Bottoms</button><button data-filter="Outerwear">Outerwear</button><button data-filter="Ethnic">Ethnic</button><button data-filter="Loungewear">Loungewear</button></div></div><div class="product-grid" id="productGrid"></div></section>
+<section class="craft" id="showroom"><div class="craft-image"><img src="images/look-12.jpg" alt="Bandhgala jacket"></div><div class="craft-copy"><p class="kicker">THE NORVEN PHILOSOPHY</p><h2>Made with intent.<br><em>Worn with ease.</em></h2><p>From the first sketch to the final stitch, every detail has a purpose. Thoughtful construction, tactile materials and a fit that feels naturally yours.</p><a class="cta dark" href="#contact">OUR APPROACH ↗</a><small class="craft-index">NORVEN / 026</small></div></section>
+<section class="custom"><div><p class="kicker">PERSONAL, BY DESIGN</p><h2>Your fit.<br><em>Your signature.</em></h2><p>Discover considered tailoring and pieces that feel made just for you.</p><a class="cta" href="#contact">EXPLORE PERSONALIZATION ↗</a></div><img src="images/look-11.jpg" alt="Tailoring details"></section>
+<section class="newsletter"><p class="kicker">A NOTE FROM NORVEN</p><h2>Stay in <em>good company.</em></h2><p>New collections, thoughtful style notes and exclusive previews.</p><form id="newsletter"><input type="email" placeholder="Your email address" required><button>SUBSCRIBE ↗</button></form><small id="newsMsg">Only the occasional note. Never the noise.</small></section>
+<section class="contact-section" id="contact-form">
+  <div class="contact-heading"><p class="kicker">LET’S CONNECT</p><h2>We’d love to<br><em>hear from you.</em></h2><p>Questions about a piece, fit or styling? Send NORVEN a note.</p></div>
+  <div class="contact-layout">
+    <form class="contact-form" id="contactForm">
+      <label>Full Name<input type="text" name="name" placeholder="Your name" required></label>
+      <label>Email Address<input type="email" name="email" placeholder="you@example.com" required></label>
+      <label>Phone Number<input type="tel" name="phone" placeholder="+91"></label>
+      <label>Subject<select name="subject"><option>Product enquiry</option><option>Order support</option><option>Styling & fit</option><option>Other</option></select></label>
+      <label class="message-label">Message<textarea name="message" rows="5" placeholder="Tell us how we can help…" required></textarea></label>
+      <button class="contact-submit" type="submit">SEND MESSAGE <span>↗</span></button><p class="form-status" id="contactStatus" aria-live="polite"></p>
+    </form>
+    <div class="map-wrap"><div class="map-title"><span class="kicker">VISIT THE CITY</span><h3>Jalandhar, <em>Punjab.</em></h3><p>Find us in the heart of Punjab.</p></div><iframe title="Map of Jalandhar, Punjab" src="https://maps.google.com/maps?q=Jalandhar%2C%20Punjab%2C%20India&t=&z=13&ie=UTF8&iwloc=&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe><a class="map-link" href="https://www.google.com/maps/search/?api=1&query=Jalandhar%2C+Punjab%2C+India" target="_blank" rel="noopener">OPEN IN GOOGLE MAPS ↗</a></div>
+  </div>
+</section>
+<footer id="contact"><a class="logo" href="#">NORVEN<span>.</span></a><div class="footer-nav"><a href="#story">About</a><a href="#collection">Collection</a><a href="#showroom">Showrooms</a><a href="mailto:hello@norven.example">Contact</a></div><small>© 2026 NORVEN. ALL RIGHTS RESERVED.</small></footer>
+<div class="search-modal" id="searchModal"><input id="searchInput" placeholder="Search the collection..."><button id="searchClose">×</button></div>
+<div class="cart-panel" id="cartPanel"><div class="cart-head"><h3>Your selection <span id="cartTotalCount">(0)</span></h3><button id="cartClose">×</button></div><div id="cartItems"></div><div class="cart-bottom"><div><span>Subtotal</span><strong id="subtotal">₹0</strong></div><button id="checkout">CONTINUE TO CHECKOUT ↗</button><small>Demo checkout — payment integration required.</small></div></div><div class="shade" id="shade"></div><div class="toast" id="toast"></div>
+<script src="script.js"></script>
+</body></html>
